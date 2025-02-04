@@ -2,6 +2,7 @@ import Card from "./components/Card";
 import {createBrowserRouter, RouterProvider } from 'react-router-dom'
 import "./styles.css";
 import Firstpage from "./components/Firstpage";
+import Song from "./components/Song";
 
 function App() {
   const router = createBrowserRouter([
@@ -11,7 +12,7 @@ function App() {
     },
     {
       path:"/card",
-      element:<Card/>
+      element:<Card/>,
     },
   ])
   return (

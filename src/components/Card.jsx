@@ -1,4 +1,16 @@
-export default () => (
+import song_file from "/janam.mp3";
+import { useEffect } from 'react';
+
+export default () => {
+
+  
+  useEffect(() => {
+    const song = new Audio(song_file);
+    song.play();
+  }, []);
+ 
+  return(
+    <>
     <div className="birthdayCard">
       <div className="cardFront">
         <h3 className="happy">HAPPY BIRTHDAY MY LOVE!</h3>
@@ -19,5 +31,7 @@ export default () => (
         <p className="name">Your Yeobo</p>
       </div>
     </div>
-  );
+    </>
+  )
+};
   
